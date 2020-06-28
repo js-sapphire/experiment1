@@ -1,13 +1,5 @@
-
-
-
-
-
-
 const answersDiv = document.querySelector('.answers');
 const optionsDiv = document.querySelector('.options');
-
-
 
 const isInsideDropZone = (pos) => {
     const dragMeButton = document.querySelector('.dragMe');
@@ -28,7 +20,6 @@ const isInsideDropZone = (pos) => {
     return (  elementPos.left > borders.left && elementPos.right < borders.right ) 
          && ( elementPos.up > borders.up && elementPos.down <                        borders.down );
 }
-
 
 const initDragEl = () => {
     const dragMeButtons = document.querySelectorAll('.dragMe');
@@ -78,8 +69,6 @@ const initDragEl = () => {
    
 }
 
-
-
 const addBlurFromDropZone = () => {
     answersDiv.classList.add('blur');
 
@@ -123,7 +112,6 @@ const initClickEL= () => {
         }); 
     });
 }
-
 
 const isPresentInOptions = () => {
     return optionsDiv.querySelector('.dragMe');
